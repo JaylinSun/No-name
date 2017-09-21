@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c7f2e7"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/btnSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f5bebe"
+                android:text="点击切换到下一个界面"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:background="#00bbff"
+                android:orientation="vertical"
+                android:focusable="false"
+                android:focusableInTouchMode="false">
+
+                <EditText
+                    android:id="@+id/etGoalMoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10px"
+                    android:hint="输入您想要的金钱"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/btnGetMoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10px"
+                    android:background="#9c10e7"
+                    android:text="点一次得一元" />
+
+                <Button
+                    android:id="@+id/btnLoseMoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10px"
+                    android:background="#fa0000"
+                    android:text="点一次掉一元" />
+
+                <TextView
+                    android:id="@+id/tvGetMoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10px"
+                    android:text="我已经得到了...元"
+                    android:textColor="#0101be"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="你撒笔吗？"
+                    android:textSize="20dp" />
+
+                <RadioGroup
+                    android:id="@+id/rgSuvery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rbYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="是的" />
+
+                    <RadioButton
+                        android:id="@+id/rbNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="不是" />
+
+                    <RadioButton
+                        android:id="@+id/rbYou"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="你是" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="你想干什么？"
+                    android:textSize="20dp" />
+
+                <CheckBox
+                    android:id="@+id/cbStudy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="沉迷学习" />
+
+                <CheckBox
+                    android:id="@+id/cbGF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="陪女朋友" />
+
+                <CheckBox
+                    android:id="@+id/cbBZ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="搬砖" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#f1c0c0"
+                android:layout_margin="10px">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Hello World!" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_margin="10px"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="炸掉日本"
+                    android:textSize="20dp"
+                    android:id="@+id/btnJp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
